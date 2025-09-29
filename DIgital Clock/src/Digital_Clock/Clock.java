@@ -53,14 +53,8 @@ public class Clock implements Runnable {
             
             SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss a");
             String Date = format.format(new Date());
-            lb1.setText(Date);
-            
-            try{
-                Thread.sleep(1000);
-            }
-            catch(Exception ex){
-                JOptionPane.showMessageDialog(null,ex.getMessage());
-            }
+            lb1.setText(Date);           
+
         }        
     }
     
